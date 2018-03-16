@@ -2,7 +2,10 @@ if [[ $('uname') == 'Linux' ]]; then
     local _vscode_linux_paths > /dev/null 2>&1
     _vscode_linux_paths=(
         "/usr/local/bin/code"
+        "/usr/local/bin/code-insiders"
+        "/usr/bin/code-insiders"
         "$HOME/bin/code"
+        "$HOME/bin/code-insiders"
         "/opt/vscode/code"
     )
     for _vscode_path in $_vscode_linux_paths; do
